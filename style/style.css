@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root{
+    --text-color: #273746;
+    --background-color:#FBFCFC ;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+
+nav, ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+}
+
+nav{
+    width: 100%;
+    justify-content: center;
+    font-weight: bold;
+    padding: 1rem;
+    background-color: var(--background-color);
+    position: fixed;
+}
+
+a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+ul > li > a{ 
+    padding: 2rem;
+}
+.container-icons-nav{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container-icons-nav > .circular-icon{
+    background-color: #273746;
+
+    border-radius: 50%;
+    padding: .4rem;
+}
+
+
+.circular-icon span{
+    display: grid;
+    place-items: center;
+    color: whitesmoke;
+}
+
+section{
+    background-color: var(--background-color);
+    display: flex;
+    padding: 1rem 6rem;
+    height: 100%;
+}
+
+.container-info-product{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: .2rem;
+}
+
+.container-info-product h2 {
+    font-size: 5rem;
+    font-weight: bold;
+    max-width: 80%;
+    padding-top: 6rem;
+}
+.container-info-product h3{
+    font-size: 2.5rem;
+    letter-spacing: 4px;
+    color: #99A3A4;
+}
+.container-info-product h3 > span{
+    color: #58D68D;
+}
+
+.container-info-product .lbl-total{
+    font-size: 1.5rem;
+    color: #BFC9CA ;
+}
+
+.container-info-product .lbl-total > span {
+    font-weight: bold;
+    color: var(--text-color);
+}
+
+.container-choose{
+    background-color: #F4F6F7 ;
+    border-radius: 10px;
+    max-width: 40%;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+.container-choose .title{
+    font-size: 1rem;
+    font-weight: bold;
+}
+.container-choose > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+.container-choose > div .btn-choose{
+    border-radius: 50%;
+    background-color: var(--text-color);
+    color: var(--background-color);
+}
+
+.btn-buy{
+    border-radius: 50px;
+    background-color: #090A0B;
+    max-width: fit-content;
+    color: whitesmoke;
+    display: flex;
+    align-items: center;
+    padding: .3rem;
+    padding-right: 1rem;
+    gap: 1rem;
+    box-shadow: 5px 5px 50px -10px rgba(0,0,0,0.29);
+    margin-top: 1rem;
+}
+
+.btn-buy .btn-icon{
+    background-color: #F1C40F;
+    border-radius: 50%;
+    padding: .4rem;
+}
+
+.container-img-producto{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 50%;
+}
+
+.container-img-producto img{
+    position: absolute;
+    height: 400px;
+}
+
+.container-img-producto span{
+    background-color: #58D68D;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+}
+
+.container-all-products{
+    margin-top: 6rem;
+}
+
+.container-all-products .item-product{
+    max-width: fit-content;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    position: relative;
+}
+
+
+.item-product img{
+    height: 90px;
+    position: absolute;
+    filter: none;
+}
+
+#Home{
+    flex-direction: column;
+    padding-top: 6rem;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+#Home h1{
+    font-size: 4rem;
+}
+#Home p{
+    font-size: 1.5rem;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+}
+
+.container-search-bar{
+    margin-top: 3rem;
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+    border-radius: 20px;
+    box-shadow: 0px 5px 15px -3px rgba(0, 0, 0, 0.5) ;
+}
+
+.container-search-bar .box-text{
+    height: 100%;
+    width: 100%;
+    border-radius: 20px 0 0 20px;
+    padding-left: 2rem;
+    background-color: transparent;
+    border: 0 transparent;
+}
+
+.container-search-bar span{
+    padding: 0 1rem;
+    height: 100%;
+    border-radius:  0 20px 20px 0;
+    display: grid;
+    place-items: center;
+}
+
+.container-search-bar span:hover{
+    background-color: purple;
+    color: whitesmoke;
+}
+
+

@@ -1,0 +1,8 @@
+@font-face{
+    font-family: "LibreBaskerville";
+    src: url("fonts/LibreBaskerville-Italic.ttf");
+}
+html{
+    font-family: "Itim";
+}
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
