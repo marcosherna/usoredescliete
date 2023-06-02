@@ -1,5 +1,19 @@
 //Variable que mantiene el estado visible del carrito
 var carritoVisible = false;
+const btnDetalleProducto = document.querySelectorAll('.boton')
+const btnCloseModal = document.getElementById('btn-close-modal');
+const modal = document.querySelector('.modal');
+
+btnCloseModal.addEventListener('click', ()=> {
+    modal.style.display  = 'none';
+}) 
+
+btnDetalleProducto.forEach( btn => {
+    btn.addEventListener('click', () => {
+        modal.style.display = 'flex'
+    })
+})
+
 
 //Espermos que todos los elementos de la pàgina cargen para ejecutar el script
 if(document.readyState == 'loading'){
@@ -52,6 +66,8 @@ function pagarClicked(){
     actualizarTotalCarrito();
     ocultarCarrito();
 }
+
+
 //Funciòn que controla el boton clickeado de agregar al carrito
 function agregarAlCarritoClicked(event){
     var button = event.target;
